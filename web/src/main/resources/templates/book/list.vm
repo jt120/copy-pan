@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<body>
+
+
+<h3>book list</h3>
+<table>
+    <tr>
+        <td>title</td>
+        <td>publisher</td>
+        <td>year</td>
+        <td>size</td>
+        <td>download</td>
+    </tr>
+    #foreach ($book in $books)
+        <tr>
+            <td>$book.title</td>
+            <td>$book.publisher</td>
+            <td>$book.year</td>
+            <td>$book.size</td>
+            <td><a href="$book.download">download</a></td>
+        </tr>
+    #end
+</table>
+</body>
+
+</html>
